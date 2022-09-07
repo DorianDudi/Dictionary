@@ -13,10 +13,11 @@ function addWord() {
 }
 
 function searchForWord() {
-	let inputWord = document.getElementById("searchField");
-  if(dictionary.includes(inputWord.value)) {
+	let searchField = document.getElementById("searchField");
+  if(dictionary.includes(searchField.value)) {
   	alert("Word found in Dictionary!");
   } else {
   	alert("Word not found in Dictionary!");
   }
+  searchField.value = "";
 }
