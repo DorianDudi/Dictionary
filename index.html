@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./styles.css" />
     </head>
     <body>
         <div id="container">
-        <form>
-          <input type="text" id='addField' placeholder="Type word to add">
-          <span> &nbsp;  >>> &nbsp;  </span>
-          <button type="button" id='addTextButton' onclick="addWord()">Add to dictionary</button>
-        </form>
+          <form>
+            <input type="text" id='addField' placeholder="Type word to add">
+            <button type="button" id='addTextButton' onclick="addWord()">Add to dictionary</button>
+          </form>
+          <form>
+            <input type="text" id='searchField' placeholder="Type word to search for">
+            <button type="button" id='searchButton' onclick="searchForWord()">Search dictionary</button>
+          </form>
         </div>
-        <script src="./scripts.js"></script>
     </body>
 </html>
